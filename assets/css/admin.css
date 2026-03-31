@@ -409,7 +409,7 @@
 }
 
 .bunnycdn-toggle input:checked + .slider {
-    background-color: var(--bunny-green);
+    background-color: var(--bunny-orange);
 }
 
 .bunnycdn-toggle input:checked + .slider:before {
