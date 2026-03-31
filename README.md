@@ -1,91 +1,86 @@
 # BunnyCDN Manager
 
-A complete BunnyCDN integration for WordPress. Automatically purge cache when content changes, rewrite URLs to serve assets through your CDN, monitor bandwidth usage, and keep WP Rocket in sync.
+A WordPress plugin for managing your BunnyCDN integration. Purge cache automatically when content changes, rewrite URLs to serve assets from your CDN, and monitor usage stats from your dashboard.
 
 ![Banner](assets/images/banner-772x250.png)
 
 ## Features
 
-### Cache Management
-- Purge entire CDN cache with one click
-- Purge specific URLs or bulk purge multiple URLs
-- Auto-purge when posts, pages, or custom post types are updated
-- Purges related URLs (homepage, categories, tags, author archives)
-- Admin bar button for quick access from anywhere
-- Activity log tracks all purge actions
+**Cache Purging**
+- Purge entire zone or specific URLs
+- Auto-purge when posts are published or updated
+- Clears related URLs (homepage, archives, taxonomy pages)
+- Admin bar shortcuts for quick access
+- Activity log showing recent purges
 
-### CDN URL Rewriting
-- Automatically rewrite static asset URLs to your CDN hostname
-- Configurable included directories (themes, uploads, plugins)
+**CDN URL Rewriting**
+- Rewrites static asset URLs to your CDN hostname
+- Configure which directories to include
 - Exclude specific paths or file patterns
-- CORS header support for fonts and assets
-- Option to disable CDN for logged-in admins (debugging)
+- CORS headers for fonts and cross-origin assets
+- Disable for logged-in admins when debugging
 
-### Usage Statistics
-- Dashboard widget showing bandwidth and requests
+**Usage Statistics**
+- Bandwidth and request counts
+- Cache hit rate
 - 30-day usage chart
-- Cache hit rate monitoring
-- Settings page with detailed statistics
+- Dashboard widget for quick overview
 
-### WP Rocket Compatibility
-- Sync cache purges between WP Rocket and BunnyCDN
-- Serves WP Rocket optimised files through CDN
-- Admin bar shortcuts for WP Rocket actions
-- Clear Used CSS, Critical CSS, and Priority Elements
+**WP Rocket Integration**
+- Syncs cache purges between WP Rocket and BunnyCDN
+- Serves optimised files through your CDN
+- Admin bar shortcuts for clearing Used CSS, Critical CSS, and preload cache
 
-### Bunny Fonts
-- Replace Google Fonts with privacy-friendly Bunny Fonts
-- Automatic URL rewriting (no code changes needed)
-- GDPR compliant alternative to Google Fonts
+**Bunny Fonts**
+- Replaces Google Fonts with privacy-friendly Bunny Fonts
+- No code changes required
+- GDPR compliant
 
-### Security
-- API key encrypted at rest using WordPress salts
-- Masked API key display in settings
+**Security**
+- API key encrypted at rest
 - Nonce verification on all actions
-- Capability checks (manage_options required)
+- Capability checks throughout
+
+## Screenshots
+
+### Settings
+![Settings Page](screenshots/screenshot-1-settings.png)
+
+### CDN Options
+![CDN Options](screenshots/screenshot-2-cdn-options.png)
+
+### Usage Stats
+![Usage Statistics](screenshots/screenshot-3-usage-stats.png)
+
+### Dashboard Widget
+![Dashboard Widget](screenshots/screenshot-4-dashboard-widget.png)
+
+### Admin Bar
+![Admin Bar](screenshots/screenshot-5-admin-bar.png)
 
 ## Requirements
 
-- WordPress 6.0 or higher
-- PHP 7.4 or higher
-- A BunnyCDN account with at least one Pull Zone
+- WordPress 6.0+
+- PHP 7.4+
+- BunnyCDN account with a Pull Zone
 
 ## Installation
 
 1. Download the latest release
 2. Upload to `/wp-content/plugins/bunnycdn-cache-purge/`
 3. Activate the plugin
-4. Go to **BunnyCDN Manager** in the admin menu
-5. Enter your API key and select your Pull Zone
+4. Go to **BunnyCDN Manager** and enter your API key
 
-### Finding Your API Key
-
-1. Log into your BunnyCDN dashboard
-2. Go to Account Settings
-3. Click on the API section
-4. Copy your API key
-
-## Screenshots
-
-Coming soon.
+Your API key is in the BunnyCDN dashboard under Account Settings > API.
 
 ## Changelog
 
 ### 1.0.0
-- Initial release
-- Cache purging (full zone and specific URLs)
-- CDN URL rewriting with configurable directories
-- Auto-purge on content updates
-- WP Rocket compatibility
-- Bunny Fonts integration
-- Usage statistics dashboard
-- Admin bar integration
-- Encrypted API key storage
-- Activity logging
+Initial release.
 
-## License
+## Licence
 
-GPL v2 or later. See [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html).
+GPL v2 or later.
 
 ## Author
 
